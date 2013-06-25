@@ -1,0 +1,56 @@
+/* @module: reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+*,body{font-family:Arial,Helvetica,sans-serif; }
+body{color:#333;background:#FFF;font-size:12px;line-height:1.5;}
+th,td{text-align:left;vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:1em;font-weight:normal;}
+a,a.visited{color:#069;text-decoration:none;}
+a:hover {text-decoration:underline;}
+*html a:hover span{text-decoration:underline;}
+a.current:hover {text-decoration:none;cursor:default;}
+img{display:block;border:0;}
+li{list-style:none;}
+input,label,select,option,textarea,button,fieldset,legend{font-size:1em;font-family:Arial,Helvetica,sans-serif;}
+textarea {overflow:auto\9;} /* fix IE area scrollbar*/
+q:before,q:after{content:''}
+
+/* @module: layout */
+body {
+    background: #565656;
+}
+.container {
+    overflow: hidden;
+    max-width: 721px;
+    padding: 25px;
+    margin: 10px auto;
+    background: #FFF;
+}
+.slide {
+    
+}
+.slide li {
+    display: inline-block;
+    position: relative;
+    width: 359px;
+    height: 234px;
+    overflow: hidden;
+}
+.slide p {
+    display: none;
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+    background: rgba(33, 33, 33, 0.8);
+    color: #FFF;
+    z-index: 100;
+}
+.slide p,
+.slide li li {
+    position: absolute;
+}
+.slide li.on {
+    z-index: 50;
+}
+.slide img {
+    width: 359px;
+}
